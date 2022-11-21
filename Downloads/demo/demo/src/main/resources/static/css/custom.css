@@ -30,6 +30,10 @@ body {
  .firstScreen{
     margin-top:4%
  }
+
+.main-menu {
+    padding:2%
+}
 /*
 .daterangepicker .ranges li {
   color: #73879C; }

@@ -6,10 +6,21 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
-    @GetMapping("/plain-page")
+    @GetMapping("/home-page")
     public ModelAndView getHome(){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("/plain-page");
+        modelAndView.setViewName("/home-page");
         return modelAndView;
     }
+
+    @GetMapping("/fragments/sidebar")
+    public String getSidemenu() {
+        return "/fragments/fragment-sidebar-menu.html";
+    }
+
+    @GetMapping("/fragments/mainmenu")
+    public String getMainmenu() {
+        return "/fragments/fragment-mainmenu-menu.html";
+    }
+
 }

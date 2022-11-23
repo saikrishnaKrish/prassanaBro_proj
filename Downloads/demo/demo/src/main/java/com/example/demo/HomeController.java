@@ -23,4 +23,10 @@ public class HomeController {
         return "/fragments/fragment-mainmenu-menu.html";
     }
 
+    @GetMapping("/fragments/footer")
+    public String getFooter() {
+        return "/fragments/fragment-footer-content.html";
+    }
+
+
 }
